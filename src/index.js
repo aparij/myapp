@@ -12,5 +12,8 @@ ReactDOM.render(<App />, document.getElementById('root'));
 serviceWorker.unregister();
 
 export const init = config => {
-  ReactDOM.render(<App config={config} />, '//*[@id="ext-gen6"]/div[4]');
+  ReactDOM.render(
+    <App config={config} />,
+    document.getElementById('widget_root')
+  );
 };
