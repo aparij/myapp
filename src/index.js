@@ -6,7 +6,9 @@ export default {
   widgets: {
     myWidget: {
       render: args => {
-        ReactDOM.render(<MyWidget />, args.selector);
+        console.log('ALEX--->9', 'index.js', 'args--->', args);
+
+        //ReactDOM.render(<MyWidget />, args.selector);
       }
     }
   }
