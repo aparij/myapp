@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom';
 
 class App extends Component {
   render() {
@@ -27,4 +28,6 @@ class App extends Component {
   }
 }
 
-export default App;
+const container = document.querySelector('#widget');
+
+ReactDOM.render(<App />, container);
