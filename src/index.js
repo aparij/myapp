@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//serviceWorker.unregister();
 
 // export const init = config => {
 //   ReactDOM.render(
@@ -18,6 +18,6 @@ serviceWorker.unregister();
 //   );
 // };
 
-const container = document.querySelector('#widget');
+// const container = document.querySelector('#widget');
 
-ReactDOM.render(<App />, container);
+// ReactDOM.render(<App />, container);
