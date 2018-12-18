@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export class App extends Component {
+export default class MyWidget extends Component {
   render() {
     console.log('ALEX--->7', 'App.js', ' render app');
 

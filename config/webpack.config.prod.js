@@ -2,11 +2,11 @@ const paths = require('./paths');
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.js',
+  entry: './src/App.js',
   devtool: 'source-map',
   output: {
     //path: __dirname + '/build',
-    library: ['MyLib'],
+    //library: ['MyLib'],
     umdNamedDefine: true,
     path: paths.appBuild,
     filename: 'app.js',
