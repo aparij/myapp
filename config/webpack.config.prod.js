@@ -7,6 +7,7 @@ module.exports = {
   output: {
     //path: __dirname + '/build',
     library: 'MyApp',
+    umdNamedDefine: true,
     path: paths.appBuild,
     filename: 'app.js',
     libraryTarget: 'umd'
