@@ -2,7 +2,7 @@ const paths = require('./paths');
 
 module.exports = {
   mode: 'production',
-  entry: './src/App.js',
+  entry: './src/index.js',
   devtool: 'source-map',
   output: {
     //path: __dirname + '/build',

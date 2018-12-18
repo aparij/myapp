@@ -1,12 +1,13 @@
+import { App } from './App';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-import MyWidget from 'App';
 export default {
-widgets: {
-   myWidget: {
-      render: (args) => {
-          ReactDOM.render(
-              <MyWidget />
-          );
+  widgets: {
+    myWidget: {
+      render: args => {
+        ReactDOM.render(<App />);
       }
-   }
-}
+    }
+  }
+};
