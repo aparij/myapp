@@ -6,8 +6,8 @@ module.exports = {
   devtool: 'source-map',
   output: {
     //path: __dirname + '/build',
-    //library: 'MyApp',
-    //umdNamedDefine: true,
+    library: ['MyLib'],
+    umdNamedDefine: true,
     path: paths.appBuild,
     filename: 'app.js',
     libraryTarget: 'umd'
