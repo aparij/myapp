@@ -8,18 +8,8 @@ class MyWidget extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <button onClick={this.onClick} />
+          <p>I'm a React App hosted somewhere on Github !</p>
+          <button onClick={this.onClick}> I'm A Widget!</button>
         </header>
       </div>
     );
@@ -28,7 +18,7 @@ class MyWidget extends Component {
   onClick = () => {
     console.log('ALEX--->29', 'App.js', 'Click');
 
-    alert('helllo');
+    alert('helllo widget');
   };
 }
 
@@ -38,9 +28,6 @@ const container = document.querySelector('#widget');
 //export const myApp = ReactDOM.createPortal(<App />, container);
 export const init = config => {
   console.log('ALEX--->40', 'App.js', 'init before render ', config);
-
-  ReactDOM.render(
-    <MyWidget config={config} />,
-    document.querySelector(config.container)
-  );
+  const container = document.querySelector(config.container);
+  ReactDOM.render(<MyWidget config={config} />, container);
 };
