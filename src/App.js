@@ -32,8 +32,8 @@ class App extends Component {
 
 const container = document.querySelector('#widget');
 
-//ReactDOM.render(<App />, container);
+ReactDOM.render(<App />, container);
 
-export const init = config => {
-  ReactDOM.render(<App config={config} />, container);
-};
+// export const init = config => {
+//   ReactDOM.render(<App config={config} />, container);
+// };
