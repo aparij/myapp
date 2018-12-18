@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class MyWidget extends Component {
+class MyWidget extends Component {
   render() {
     console.log('ALEX--->7', 'App.js', ' render app');
 
@@ -32,10 +32,10 @@ export default class MyWidget extends Component {
   };
 }
 
-//const container = document.querySelector('#widget');
+const container = document.querySelector('#widget');
 
 //ReactDOM.render(<App />, container);
 //export const myApp = ReactDOM.createPortal(<App />, container);
-// export const init = config => {
-//   ReactDOM.render(<App config={config} />, container);
-// };
+export const init = config => {
+  ReactDOM.render(<MyWidget config={config} />, container);
+};
