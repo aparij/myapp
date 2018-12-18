@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 class MyWidget extends Component {
   render() {
     console.log('ALEX--->7', 'App.js', ' render app');
-
+    console.log('WIDGET window', window.current_user);
     return (
       <div className="App">
         <header className="App-header">
