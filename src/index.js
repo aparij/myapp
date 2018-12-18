@@ -7,7 +7,7 @@ export default {
     myWidget: {
       render: args => {
         console.log('ALEX--->9', 'index.js', 'args--->', args);
-        return <MyWidget />;
+        return MyWidget;
         //ReactDOM.render(<MyWidget />, args.selector);
       }
     }
