@@ -26,14 +26,16 @@ class App extends Component {
   }
 
   onClick = () => {
+    console.log('ALEX--->29', 'App.js', 'Click');
+
     alert('helllo');
   };
 }
 
 const container = document.querySelector('#widget');
 
-//ReactDOM.render(<App />, container);
-export const myApp = ReactDOM.createPortal(<App />, container);
+ReactDOM.render(<App />, container);
+//export const myApp = ReactDOM.createPortal(<App />, container);
 // export const init = config => {
 //   ReactDOM.render(<App config={config} />, container);
 // };
