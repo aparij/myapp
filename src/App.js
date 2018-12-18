@@ -37,5 +37,10 @@ const container = document.querySelector('#widget');
 //ReactDOM.render(<App />, container);
 //export const myApp = ReactDOM.createPortal(<App />, container);
 export const init = config => {
-  ReactDOM.render(<MyWidget config={config} />, container);
+  console.log('ALEX--->40', 'App.js', 'init before render ', config);
+
+  ReactDOM.render(
+    <MyWidget config={config} />,
+    document.querySelector(config.container)
+  );
 };
