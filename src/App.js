@@ -19,10 +19,15 @@ class App extends Component {
           >
             Learn React
           </a>
+          <button onClick={this.onClick} />
         </header>
       </div>
     );
   }
+
+  onClick = () => {
+    alert('helllo');
+  };
 }
 
 const container = document.querySelector('#widget');
