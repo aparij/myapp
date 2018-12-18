@@ -6,7 +6,7 @@ export default {
   widgets: {
     myWidget: {
       render: args => {
-        ReactDOM.render(<App />);
+        ReactDOM.render(<App />, args.selector);
       }
     }
   }
