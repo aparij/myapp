@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Board from 'react-trello';
+import data from './data.json';
 
 class MyWidget extends Component {
   render() {
@@ -11,6 +13,7 @@ class MyWidget extends Component {
           <p>I'm a React App hosted somewhere on Github !</p>
           <button onClick={this.onClick}> I'm A Widget!</button>
         </header>
+        <Board data={data} draggable />
       </div>
     );
   }
