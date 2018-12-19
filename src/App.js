@@ -1,11 +1,51 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Board from 'react-trello';
-import data from './data.json';
+//import data from './data.json';
 
 class MyWidget extends Component {
   render() {
+    let data = {
+      lanes: [
+        {
+          id: 'PLANNED',
+          title: 'Planned Projects',
+          label: '20/70',
+          style: {
+            width: 280
+          },
+          cards: []
+        },
+        {
+          id: 'WIP',
+          title: 'Work In Progress',
+          label: '10/20',
+          style: {
+            width: 280
+          },
+          cards: []
+        }
+      ]
+    };
     console.log('ALEX--->7', 'App.js', ' render app', this.props.config);
+
+    this.props.config.projects.map((project, index) => {
+      if (index % 2 == 0) {
+        data[0].cards.push({
+          id: project.id,
+          title: project.name,
+          label: project.name + project.type,
+          description: project.uuid
+        });
+      } else {
+        data[1].cards.push({
+          id: project.id,
+          title: project.name,
+          label: project.name + project.type,
+          description: project.uuid
+        });
+      }
+    });
     return (
       <div className="App">
         <header className="App-header">
