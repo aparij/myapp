@@ -10,7 +10,7 @@ class MyWidget extends Component {
       <div className="App">
         <header className="App-header">
           <p>I'm a React App hosted somewhere on Github !</p>
-          <h1> {this.props.config.current_user.login}</h1>
+          <h1> Welcome {this.props.config.current_user.login} ! </h1>
           <button onClick={this.onClick}> I'm A Widget!</button>
         </header>
         <Board data={data} draggable />
