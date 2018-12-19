@@ -5,7 +5,7 @@ import data from './data.json';
 
 class MyWidget extends Component {
   render() {
-    console.log('ALEX--->7', 'App.js', ' render app');
+    console.log('ALEX--->7', 'App.js', ' render app', this.props.config);
     return (
       <div className="App">
         <header className="App-header">
