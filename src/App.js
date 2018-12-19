@@ -31,14 +31,14 @@ class MyWidget extends Component {
 
     this.props.config.projects.map((project, index) => {
       if (index % 2 == 0) {
-        data.lanes[0].cards.push({
+        data['lanes'][0]['cards'].push({
           id: project.id,
           title: project.name,
           label: project.name + project.type,
           description: project.uuid
         });
       } else {
-        data.lanes[1].cards.push({
+        data['lanes'][1]['cards'].push({
           id: project.id,
           title: project.name,
           label: project.name + project.type,
